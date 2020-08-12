@@ -1,0 +1,505 @@
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+li{
+    list-style: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.header{
+    height: 100vh;
+    color: white;
+    width: 100%;
+}
+.header::before{
+    background: url("../images/bg4.jpg") no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    opacity: 1;
+    filter: brightness(30%);
+}
+
+.navbar{
+    width: 92%;
+    height: 70px;
+    grid-template-columns: 1fr 10fr;
+    display: flex;
+    padding: 15px 50px;
+}
+.logo-name{
+    margin:10px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.logo-name:hover{
+    cursor: pointer;
+}
+.navbar .nav_list{
+    margin: 10px;
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 90%;
+    margin-top: 20px;
+}
+.navbar .nav_list li{
+    margin: 0px 15px;
+}
+.navbar .nav_list li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li:hover{
+    cursor: pointer;
+}
+.hidden-navbar{
+    width: 100%;
+    height: 90vh;
+    z-index: 10;
+    margin-right: -5px;
+}
+.navbar .nav-option-show{
+    height: 25px;
+    width: 25px;
+    margin-top: 7px;
+    float: right;
+    background: url("../images/opt-show.png") no-repeat center center/cover;
+    display: none;
+}
+.navbar #nav_menu_show{
+    margin: 50px 0px;
+    height: 80%;
+    background-color: #0e2431;
+    padding: 20px 30px;
+    /* margin-right: -31px; */
+    margin-right: -33px;
+    display: none;
+}
+#nav_menu_show ul li{
+    margin: 30px 0px;
+    cursor: pointer;
+}
+.navbar #nav_menu_show ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+.header .container-table{
+    height: 84%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.header .container{
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    padding: 15px 0px;
+}
+.my-image img{
+    height: 200px;
+    width: 200px;
+}
+.my-name{
+    font-size: 30px;
+    font-weight: bold;
+    margin:25px 0px
+}
+.refer-word{
+    font-size: 20px;
+}
+.social-media button:first-child{
+    background: url(../images/facebook.png) no-repeat center center/cover;
+}
+.social-media button:nth-child(2){
+    background: url(../images/instagram.png) no-repeat center center/cover;
+}
+.social-media button:nth-child(3){
+    background: url(../images/linkedin.png) no-repeat center center/cover;
+}
+.social-media button:nth-child(4){
+    background: url(../images/twitter.png) no-repeat center center/cover;
+}
+.social-media button{
+    margin: 0px 5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    border: 0.5px solid white;
+}
+.social-media button:hover{
+    cursor: pointer;
+}
+#about-me{
+    height: 100vh;
+    margin-top: 4px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+}
+#about-me .image-about-me{
+    padding: 50px;
+}
+#about-me .image-about-me .image-holder{
+    height: 100%;
+    width: 100%;
+    background: url("../images/sandipphoto.jpg") no-repeat center center/cover;
+}
+#about-me .my-intro{
+    padding: 40px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+#about-me .my-intro span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 10px;
+    display: inline-block;
+
+}
+#about-me .my-intro p{
+    margin-top: 30px;
+    font-size: 20px;
+}
+#about-me .my-intro .table-data{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+}
+#about-me .my-intro .table-data .key{
+    color: rgb(43, 43, 43);
+    font-size: 20px;
+}
+#about-me .my-intro .table-data .value{
+    color: rgb(139, 139, 139);
+    font-size: 20px;
+}
+#about-me .my-intro .table-data div{
+    margin: 10px 0px;
+}
+#about-me .my-intro button{
+    width: 110px;
+    height: 50px;
+    background-color: rgb(21, 255, 0);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+#about-me .my-intro button:hover{
+    cursor: pointer;
+    background-color: rgb(160, 255, 152);
+}
+
+#abilities{
+    background-color: #f9f9f9;
+    min-height: 50vh;
+    padding: 30px 50px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 0.001fr 1fr;
+    grid-gap: 5px;
+}
+#abilities h2{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#abilities .skills .skill{
+    margin: 20px;
+}
+#abilities .skills .skill .name{
+    text-align: left;
+    display: inline-block;
+    width: 89%;
+    font-size: 18px;
+    font-weight: 600;
+}
+#abilities .skills .skill .percent{
+    text-align: right;
+    display: inline-block;
+    width: 10%;
+    font-size: 15px;
+}
+#abilities .skills .skill .bar{
+    width: 100%;
+    height: 20px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+#abilities .skills .skill .bar .filler{
+    background-color: rgb(0, 174, 255);
+    height: 18px;
+    border-radius: 9px;
+    margin-left: -1px;
+    border: 1px solid rgb(0, 174, 255);
+}
+.border{
+    height: 100%;
+    border: 1px solid #e3e3e3;
+}
+#abilities .key-strengths{
+    text-align: left;
+}
+#abilities .key-strengths h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+#abilities .key-strengths .strength{
+    margin: 10px;
+    font-size: 18px;
+    margin-left: 20px;
+    list-style-type: disc;
+}
+.strengths{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 20px;
+}
+#contacts{
+    background-color: rgb(0, 255, 255);
+    padding: 30px 50px;
+}
+#contacts h2{
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+#contacts .name{
+    font-weight: bold;
+    color: rgb(43, 43, 43);
+}
+#contacts .value{
+    color: rgb(139, 139, 139) ;
+}
+#contacts .contact{
+    display: inline-block;
+    width: fit-content;
+    margin: 20px;
+    font-size: 20px;
+    text-align: left;
+}
+
+@media screen and (max-width: 1024px){
+    #about-me{
+        height: 120vh;
+    }
+    /* .header{
+        width: 96%;
+    } */
+    .navbar{
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    /* .header{
+        width: 92%;
+    } */
+    .navbar{
+        width: 87%;
+    }
+
+    .my-name{
+        font-size: 25px;
+    }
+    .refer-word{
+        margin-top: -20px;
+        font-size: 20px;
+    }
+    #about-me{
+        display: block;
+        height: auto;
+    }
+    #about-me .image-about-me{
+        width: fit-content;
+        margin: 0px auto;
+    }
+    #about-me .image-about-me .image-holder{
+        height: 400px ;
+        width: 400px;
+    }
+
+    #abilities{
+        grid-template-columns: none;
+        grid-gap: 10px;
+    }
+    .key-strengths{
+        margin-top: 20px;
+    }
+    .border{
+        background: #e3e3e3 ;
+    }
+    #contacts h2{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    #contacts .contact{
+        font-size: 15px;
+        margin: 15px 10px;
+    }
+
+}   
+
+@media screen and (max-width:426px){
+
+    /* .header{
+        width: 81%;
+    } */
+    .navbar{
+        padding: 15px 25px ;
+    }
+
+    .logo-name{
+        margin-left: 0px;
+        font-size: 20px;
+    }
+    .navbar .nav_list{
+        display: none;
+    }
+    #nav_menu_show{
+        display: none;
+    }
+    .navbar .nav-option-show{
+        display: block;
+    }
+    .my-name{
+        font-size: 20px;
+    }
+    .refer-word{
+        margin-top: -15px;
+        font-size: 15px;
+    }
+    .social-media{
+        margin-top: 15px;
+    }
+    .social-media button{
+        height: 25px;
+        width: 25px;
+    }
+    .my-image img{
+        height: 150px;
+        width: 150px;
+    }
+    #about-me .image-about-me .image-holder{
+        height: 77vw ;
+        width: 77vw;
+    }
+    #about-me .my-intro{
+        padding-top: 0px;
+    }
+    #about-me .my-intro span{
+        font-size: 19px;
+    }
+    #about-me .my-intro p{
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    #about-me .my-intro .table-data{
+        display: block;
+    }
+    #about-me .my-intro .table-data .key{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    #about-me .my-intro .table-data .value{
+        font-size: 15px;
+    }
+    #about-me .my-intro button{
+        margin-top: 0px;
+        height: 30px;
+        width: 70px;
+        font-size: 12px;
+    }
+    
+    #abilities{
+        padding: 30px 20px;
+    }
+
+    #abilities h2{
+        font-size: 20px;
+    }
+    #abilities .skills .skill .name{
+        width: 88%;
+        font-size: 13px;
+    }
+    #abilities .skills .skill .percent{
+        font-size: 12px;
+    }
+    #abilities .skills .skill .bar{
+        height: 15px;
+    }
+    #abilities .skills .skill .bar .filler{
+        height: 13px;
+    }
+    #abilities .key-strengths .strength{
+        font-size: 15px;
+    }
+
+    #contacts{
+        padding: 30px 20px;
+    }
+    #contacts .contact{
+        margin: 10px 4px;
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width:375px){
+    .header::before{
+        width: 103vw;
+    }
+    #abilities{
+        width: 92%;
+    }
+    #contacts{
+        width: 92%;
+    }
+}
+
+@media screen and (max-width:320px){
+    .logo-name{
+        font-size: 15px;
+    }
+    .my-name{
+        margin: 0px;
+        margin-top: 15px;
+        font-size: 17px;
+    }
+    .refer-word{
+        margin-top: 5px;
+        font-size: 13px;
+    }
+    
+    .header::before{
+        width: 107vw;
+    }
+    #abilities{
+        width: 94%;
+    }
+    #contacts{
+        width: 94%;
+    }
+    .navbar .nav-option-show{
+       height: 20px;
+       width: 20px;
+    }
+}
+
