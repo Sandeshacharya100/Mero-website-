@@ -67,6 +67,7 @@ body{
     height: 90vh;
     z-index: 10;
     margin-right: -5px;
+    display: none;
 }
 .navbar .nav-option-show{
     height: 25px;
@@ -294,13 +295,19 @@ body{
     text-align: left;
 }
 
+#contacts p{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+
 @media screen and (max-width: 1024px){
     #about-me{
         height: 120vh;
     }
-    /* .header{
-        width: 96%;
-    } */
     .navbar{
         width: 90%;
     }
@@ -308,10 +315,6 @@ body{
 }
 
 @media screen and (max-width: 768px){
-
-    /* .header{
-        width: 92%;
-    } */
     .navbar{
         width: 87%;
     }
@@ -353,6 +356,11 @@ body{
     #contacts .contact{
         font-size: 15px;
         margin: 15px 10px;
+    }
+
+    #contacts p{
+        margin-top: 40px;
+        font-size: 18px;
     }
 
 }   
@@ -459,18 +467,24 @@ body{
         margin: 10px 4px;
         font-size: 10px;
     }
-
+    #contacts p{
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    
 }
+
+
 
 @media screen and (max-width:375px){
     .header::before{
         width: 103vw;
     }
     #abilities{
-        width: 92%;
+        width: 95%;
     }
     #contacts{
-        width: 92%;
+        width: 95%;
     }
 }
 
@@ -491,15 +505,12 @@ body{
     .header::before{
         width: 107vw;
     }
-    #abilities{
-        width: 94%;
-    }
-    #contacts{
-        width: 94%;
-    }
     .navbar .nav-option-show{
        height: 20px;
        width: 20px;
+    }
+    #contacts p{
+        font-size: 12px;
     }
 }
 
