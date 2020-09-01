@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sandesh: Portfolio website</title>
+    <title>Sandip Acharya: Personal Website </title>
 
     <link rel="stylesheet" href="css/index-style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@300&display=swap"
@@ -14,7 +14,7 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            <div class="logo-name">SANDESH</div>
+            <div class="logo-name">Sandip</div>
             <div class="hidden-navbar">
                 <div class="nav-option-show" onclick="navButtonClick()"></div>
                 <div id="nav_menu_show">
@@ -22,6 +22,7 @@
                         <li class="hidden-navbar-options"><a href="index.html" class="nav__link active">Home</a></li>
                         <li class="hidden-navbar-options"><a href="#about-me" class="nav__link">About</a></li>
                         <li class="hidden-navbar-options"><a href="#abilities" class="nav__link">Skills</a></li>
+                        <li class="hidden-navbar-options"><a href="#work" class="nav__link">Researches</a></li>
                         <li class="hidden-navbar-options"><a href="#contacts" class="nav__link">Contact</a></li>
                     </ul>
                 </div>
@@ -29,6 +30,9 @@
             <ul class="nav_list">
                 <li class="navbar-options">
                     <a href="#contacts">Contacts</a>
+                </li>
+                <li class="navbar-options">
+                    <a href="#work">Research</a>
                 </li>
                 <li class="navbar-options">
                     <a href="#abilities">Skills</a>
@@ -46,7 +50,7 @@
                 <div class="my-image">
                     <img src="images/sandip.jpg" alt="My Image" style=" border-radius: 100px; border:5px solid white;">
                 </div>
-                <div class="my-name">Hi, I'm Sandesh Acharya</div>
+                <div class="my-name">Hi, I'm Sandip Acharya</div>
                 <div class="refer-word">Transporation Engineer</div>
                 <div class="social-media" style="margin:15px 0px">
                     <button onclick="window.location.href='https://www.facebook.com/sandeshacharya100';"></button>
@@ -65,7 +69,7 @@
         <div class="my-intro">
             <span>Transporation Engineer</span>
             <p>
-                I am <b> Sandesh Acharya</b>, a creative and strategic thinker and planner, one who is also sharp,
+                I am <b> Sandip Acharya</b>, a creative and strategic thinker and planner, one who is also sharp,
                 persuasive and highly adaptable
                 having Well-developed analytical and organisational skills; goal and result oriented with strong work
                 ethic. <br> <br>
@@ -76,7 +80,7 @@
                 <div class="col-1">
                     <div>
                         <b class="key">Name :</b>
-                        <span class="value">Sandesh Acharya</span>
+                        <span class="value">Sandip Acharya</span>
                     </div>
                     <div>
                         <b class="key">Age :</b>
@@ -89,7 +93,6 @@
 
                 </div>
                 <div class="col-2">
-                    
                     <div>
                         <b class="key">Email :</b>
                         <span class="value">sandeshacharya12@gmail.com</span>
@@ -101,7 +104,9 @@
                 </div>
 
             </div>
-            <button onclick="window.location.href='https://drive.google.com/file/d/1TBXQAfnkx7mCsXvEIwnFpFlmphNnkkE_/view?usp=sharing'">View CV</button>
+            <button
+                onclick="window.location.href='https://drive.google.com/file/d/1TBXQAfnkx7mCsXvEIwnFpFlmphNnkkE_/view?usp=sharing'">View
+                CV</button>
         </div>
     </section>
     <section id="abilities">
@@ -161,15 +166,25 @@
             </div>
         </div>
     </section>
+    <section class="work section" id="work">
+        <h2 class="section-title">Research and Publications</h2>
+
+        <div class="work__container">
+            <div class="work__img">
+                <a href="link here" target="_blank"><img src="images/demo research.jpg">
+                </a>
+            </div>
+        </div>
+    </section>
     <section id="contacts">
         <h2>My Contact Info</h2>
         <div class="contact">
             <span class="name"> Email: <br> </span>
-            <span class="value"> Sandeshacharya12@gmail.com<br>Sandipacharya12@gmail.com </span>
+            <span class="value"> Sandeshacharya12@gmail.com <br> Sandipacharya12@gmail.com </span>
         </div>
         <div class="contact">
             <span class="name"> Address: <br> </span>
-            <span class="value">Kalanki, Kathmandu <br> <br></span>
+            <span class="value">Kalanki, Kathmandu <br> <br> </span>
         </div>
         <p class="copyright">© 2020 copyright all rights reserved</p>
     </section>
