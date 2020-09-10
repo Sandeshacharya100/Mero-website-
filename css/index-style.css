@@ -298,6 +298,8 @@ body{
 .work__img img{
   transition: 1s;
   cursor: pointer;
+  height: 200px;
+  width: 350px;
 }
 .work__img img:hover{
   transform: scale(1.1);
