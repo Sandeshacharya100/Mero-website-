@@ -207,7 +207,7 @@ body{
 
 #abilities{
     background-color: #f9f9f9;
-    min-height: 50vh;
+    min-height: 45vh;
     padding: 30px 50px;
     text-align: center;
     display: grid;
@@ -261,7 +261,7 @@ body{
 }
 #abilities .key-strengths .strength{
     margin: 10px;
-    font-size: 18px;
+    font-size: 17px;
     margin-left: 20px;
     list-style-type: disc;
 }
@@ -492,7 +492,7 @@ body{
         height: 13px;
     }
     #abilities .key-strengths .strength{
-        font-size: 15px;
+        font-size: 14px;
     }
 
     #work .section-title{
