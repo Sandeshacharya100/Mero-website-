@@ -191,7 +191,7 @@ body{
 #about-me .my-intro .table-data div{
     margin: 10px 0px;
 }
-#about-me .my-intro button{
+.gotoButton{
     width: 110px;
     height: 50px;
     background-color: rgb(21, 255, 0);
@@ -200,7 +200,7 @@ body{
     margin-top: 20px;
     border-radius: 10px;
 }
-#about-me .my-intro button:hover{
+.gotoButton:hover{
     cursor: pointer;
     background-color: rgb(160, 255, 152);
 }
@@ -285,8 +285,7 @@ body{
 .work__container{
   margin:20px auto;
   text-align: left;
-  display: flex;
-  overflow-x: auto;
+  
 }
 .work__img{
   box-shadow: 0 4px 25px rgba(14,36,49,.15);
@@ -303,8 +302,26 @@ body{
 .work__img img:hover{
   transform: scale(1.1);
 }
-
-
+.work__container ul li{
+    list-style: decimal;
+    font-weight: bold;
+    font-size: 20px;
+}
+.work__container ul{
+    padding: 0px 10px;
+}
+.research{
+    padding: 5px;
+    margin: 10px 0px;
+}
+.research .nameOfWork{
+    font-weight: bold;
+    font-size: 20px;
+}
+.research .linkOfWork button{
+    width: 140px;
+    margin: 5px 0px;
+}
 #contacts{
     background-color:brown;
     padding: 30px 50px;
@@ -464,7 +481,7 @@ body{
     #about-me .my-intro .table-data .value{
         font-size: 15px;
     }
-    #about-me .my-intro button{
+    .gotoButton{
         margin-top: 0px;
         height: 30px;
         width: 70px;
@@ -498,7 +515,16 @@ body{
     #work .section-title{
         font-size: 18px;
     }
-
+    .research .nameOfWork{
+        font-size: 18px;
+    }
+    .work__container ul li{ 
+        font-size: 18px;
+    }
+    .research .linkOfWork button{
+        width: 135px;
+        
+    }
     #contacts{
         padding: 30px 20px;
     }
@@ -547,6 +573,15 @@ body{
     .navbar .nav-option-show{
        height: 20px;
        width: 20px;
+    }
+    .research .nameOfWork{
+        font-size: 15px;
+    }
+    .work__container ul li{
+        font-size: 15px;
+    }
+    .research .linkOfWork button {
+        width: 110px;
     }
     #contacts p{
         font-size: 12px;
