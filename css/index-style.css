@@ -281,6 +281,7 @@ body{
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     margin: 20px 0px;
+    text-align: center;
 }
 .work__container{
   margin:20px auto;
@@ -322,6 +323,24 @@ body{
     width: 140px;
     margin: 5px 0px;
 }
+
+.videos{
+    height: 70vh;
+    padding: 30px;
+}
+.videos div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    height: 45vh;
+    overflow-y: auto;
+}
+.videos iframe{
+    height: 45vh;
+    width: 80vh;
+    margin: 0px auto;
+}
+
 #contacts{
     background-color:brown;
     padding: 30px 50px;
@@ -400,6 +419,10 @@ body{
     }
     .border{
         background: #e3e3e3 ;
+    }
+    .videos iframe{
+        width: 64vh;
+        height: 36vh;
     }
     #contacts h2{
         font-size: 20px;
@@ -525,6 +548,12 @@ body{
         width: 135px;
         
     }
+    .videos h2{
+        font-size: 20px;
+    }
+    .videos div{
+        grid-template-columns: 1fr;
+    }
     #contacts{
         padding: 30px 20px;
     }
@@ -541,12 +570,16 @@ body{
 
 
 
-@media screen and (max-width:375px){
+@media screen and (max-width:376px){
     .header::before{
         width: 103vw;
     }
     #abilities{
         width: 95%;
+    }
+    .videos iframe{
+        width: 56vh;
+        height: 32vh;
     }
     #contacts{
         width: 95%;
@@ -582,6 +615,10 @@ body{
     }
     .research .linkOfWork button {
         width: 110px;
+    }
+    .videos iframe{
+        width: 46vh;
+        height: 26vh;
     }
     #contacts p{
         font-size: 12px;
